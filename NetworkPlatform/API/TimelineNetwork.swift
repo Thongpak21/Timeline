@@ -19,7 +19,7 @@ final class TimelineNetwork {
     func fetchTimeline() -> Observable<Timeline> {
         let request = TimelineRequest(accessToken: accessToken)
         let router = Router.timeline(request: request)
-        return network.request(router: router).subscribe
+        return network.request(router: router)
     }
 
     

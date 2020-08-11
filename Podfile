@@ -11,7 +11,7 @@ target 'Timeline' do
   target 'TimelineTests' do
     inherit! :search_paths
     pod 'RxSwift'
-    pod 'RxCocoa'w
+    pod 'RxCocoa'
   end
 end
 
