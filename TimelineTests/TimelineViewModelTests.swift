@@ -106,6 +106,7 @@ class HomeViewModelTests: XCTestCase {
       ]
     }
     
+    
     private func createAlbums() -> [AlbumResult] {
       return [
         AlbumResult(id: "123", thumbnail: URL(string: "https://google.co.th")!),

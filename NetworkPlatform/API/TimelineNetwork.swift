@@ -22,5 +22,4 @@ final class TimelineNetwork {
         return network.request(router: router)
     }
 
-    
 }

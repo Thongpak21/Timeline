@@ -23,6 +23,5 @@ final class TimelineUsecase: Domain.TimelineUsecase {
             .asObservable()
             .map({ ($0.result ?? [TimelineResult]()) })
     }
-
 }
 

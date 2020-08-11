@@ -17,17 +17,14 @@ protocol BaseRouter: URLRequestConvertible {
 }
 
 enum Router: BaseRouter {
-    
     case timeline(request: TimelineRequest)
     case photo(request: TimelineRequest)
-    
     var method: Alamofire.HTTPMethod {
         switch self {
         default:
             return .get
         }
     }
-    
     var apiUrl: String {
         return "https://gorest.co.in/public-api"
     }
@@ -72,6 +69,7 @@ enum Router: BaseRouter {
             default:
                 return try Alamofire.JSONEncoding.default.encode(urlRequest, with: nil)
             }
+            
         }
     }
 }

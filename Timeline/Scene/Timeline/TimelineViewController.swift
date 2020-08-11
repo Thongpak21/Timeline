@@ -18,32 +18,13 @@ class TimelineViewController: UIViewController {
     let disposeBag = DisposeBag()
     var refreshControl = UIRefreshControl()
 
-    override func loadView() {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         setSearch()
         bindViewModel()
-        
-    }
+        title = "Timeline"
 
-    override func viewWillAppear(_ animated: Bool) {
-
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        
     }
     
     private func setSearch() {

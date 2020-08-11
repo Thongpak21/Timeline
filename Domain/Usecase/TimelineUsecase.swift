@@ -12,4 +12,3 @@ import RxSwift
 public protocol TimelineUsecase {
     func fetchTimelines() -> Observable<[TimelineResult]>
 }
- 

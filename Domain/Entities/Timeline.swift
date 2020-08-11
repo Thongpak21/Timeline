@@ -14,10 +14,11 @@ public struct Timeline: Codable {
     enum CodingKeys: String, CodingKey {
         case result = "result"
     }
+    
 }
 
 public struct TimelineResult: Codable {
-    public let id: String
+    public let id: String!
     public let userId: String?
     public let title: String?
     public let link: Link?
